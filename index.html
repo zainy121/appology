@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating hearts -->
+  <div class="hearts"></div>
+
+  <!-- PAGE 1: Question -->
+  <section id="page1" class="page active">
+    <div class="container">
+      <h1 id="question">Can we talk? 🥺</h1>
+      <div class="buttons">
+        <button class="yes" onclick="nextPage(2)">Yes 💖</button>
+        <button class="no" id="noBtn">Not now 🙁</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 2: Cute reaction -->
+  <section id="page2" class="page">
+    <div class="container">
+      <h1>Thank you 😌</h1>
+      <p>It means a lot that you’re listening 💖</p>
+      <button onclick="nextPage(3)">Next ➡️</button>
+    </div>
+  </section>
+
+  <!-- PAGE 3: Photos + Reasons -->
+  <section id="page3" class="page">
+    <div class="container">
+      <h1>For you ... i hope this makes uh smile 🥰</h1>
+      <div class="photos">
+        <img src="assets/photo1.jpg" alt="Us 1">
+        <img src="assets/photo2.jpg" alt="Us 2">
+            </div>
+      <ul class="reasons">
+        <li>Just wanted to flex my skills to uh..</li>
+        <li>handsome munda </li>
+        <li>Itni v buri ni hun yr </li>
+      </ul>
+      <button onclick="nextPage(4)">Next ➡️</button>
+    </div>
+  </section>
+
+  <!-- PAGE 4: Music + Lyrics -->
+  <section id="page4" class="page">
+    <div class="container">
+      <h1>Special song for you 🎶</h1>
+      <audio id="song" controls>
+        <source src="assets/song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <div class="lyrics">
+        <p data-time="22">I know uh must be thinking of me </p>
+        <p data-time="27">Hahaha .... mzk kr ri hun yr </p>
+        <p data-time="32">but uh must be thinking ki ab yeh sb kya h </p>
+        <p data-time="38">Dil ne to haan kiya hai, toh kr diye </p>
+        <p data-time="47">i guess app jitna mujhe begairat feel krwa chuke ho </p>
+        <p data-time="53">utni v ni hun yr </p>
+        <p data-time="64">pta h bht ghtiya feel hota h yr itna jitna tu soch v ni skta </p>
+        <p data-time="75">aur trust me ab btana v ni feel kysa hota h ya tm krwate ho! </p>
+             </div>
+       <!-- ADD THIS BUTTON -->
+    <button class="yes" onclick="nextPage(5)">Next ➡️</button>
+
+  </div>
+</section>
+    </div>
+  </section>
+
+  <!-- PAGE 5: Final surprise -->
+  <section id="page5" class="page">
+    <div class="container">
+      <h1>Affu ❤️</h1>
+      <p> Be happy aur hmesha dua krungi ki tm jaha raho jsike saath raho bht khush raho ❤️</p>
+      <p>cuz i don't wish bad for uh as uh do ✨</p>
+    </div>
+  </section>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
